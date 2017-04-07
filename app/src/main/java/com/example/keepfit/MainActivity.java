@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
     static String notifications = "On";
     static String editGoals = "On";
 
-    static String triggers = "Off";
+    static String triggers = "On";
     static JobScheduler jobScheduler;
 
 
@@ -145,12 +145,12 @@ public class MainActivity extends AppCompatActivity
         /**************************************** Triggers ****************************************/
 
 
-//        jobScheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
-//        JobInfo.Builder builder = new JobInfo.Builder(1, new ComponentName(getPackageName(),
-//                    TurnOnTriggers.class.getName()));
-//
-//        builder.setPeriodic(5000);
-//        jobScheduler.schedule(builder.build());
+        jobScheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
+        JobInfo.Builder builder = new JobInfo.Builder(1, new ComponentName(getPackageName(),
+                    TurnOnTriggers.class.getName()));
+
+        builder.setPeriodic(5000);
+        jobScheduler.schedule(builder.build());
 
     }
 
