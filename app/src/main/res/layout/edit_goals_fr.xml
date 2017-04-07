@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editgoalfragm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.EditGoalFr"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/emptyline" />
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="Edit Goal:"
+        android:textColor="@android:color/white"
+        android:background="@color/colorBG"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emptyline"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emptyline0"
+        android:layout_below="@id/textView0" />
+
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Steps:"
+        android:id="@+id/textgoal"
+        android:textColor="@color/colorAccent"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/emptyline0" />
+
+
+    <Spinner
+        android:id="@+id/unitspinner"
+        android:background="@color/colorSpin"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignEnd="@id/emptyline"
+        android:layout_below="@id/emptyline0"
+        android:entries="@array/set_units"
+        android:textColorHint="@android:color/holo_blue_bright"
+        android:prompt="@string/setsteps_title" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:id="@+id/setsteps_et"
+        android:textColor="@color/mdtp_accent_color"
+        android:layout_below="@id/unitspinner"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/set_steps"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:id="@+id/goalname_et"
+        android:textColor="@color/mdtp_accent_color"
+        android:layout_below="@id/setsteps_et"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/setgoal_name"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/my_button2"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/del_button"
+        android:layout_below="@id/goalname_et"
+        />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/set_button"
+        android:layout_below="@id/goalname_et"
+        />
+
+
+
+</RelativeLayout>

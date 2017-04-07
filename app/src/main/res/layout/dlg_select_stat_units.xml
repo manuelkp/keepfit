@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sel_stat_units"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.Dlg_SelectUnits"
+    >
+
+
+
+    <TextView
+        android:id="@+id/txtmode"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Units:"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent" />
+
+    <Spinner
+        android:id="@+id/unitstatspinner"
+        android:background="@color/colorSpin"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@id/txtmode"
+        android:layout_below="@id/txtmode"
+        android:entries="@array/set_units"
+        android:textColorHint="@android:color/holo_blue_bright" />
+
+
+    <Button
+        android:id="@+id/done_su_button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@id/unitstatspinner"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_below="@id/unitstatspinner"
+        />
+
+
+
+</RelativeLayout>

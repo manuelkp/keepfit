@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--@@ To change the menu things-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_see_saved_goal"
+            android:icon="@drawable/ic_savedgoals"
+            android:title="@string/see_goals" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_grade_statistics"
+            android:title="Statistics" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_test"
+                android:icon="@drawable/ic_menu_test"
+                android:title="Test Mode" />
+        </menu>
+    </item>
+
+</menu>

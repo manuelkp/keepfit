@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_savedgoals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/list_horizontal_margin"
+    android:paddingLeft="@dimen/list_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.Nav_SeeSavedGoalsFr"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Goals:"
+        android:id="@+id/title_goals"/>
+
+    <ListView
+        android:id="@+id/listdb"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.1dp"
+        android:divider="@color/colorBG"
+        android:layout_below="@+id/title_goals"
+        android:longClickable="true"
+        >
+    </ListView>
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="Set New"
+        android:id="@+id/setnewgoal"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="35dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:onClick="onClickEditGoal"/>
+
+</RelativeLayout>

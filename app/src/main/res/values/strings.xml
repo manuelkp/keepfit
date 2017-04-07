@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">KeepFit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="set_new_goal">Set New Goal</string>
+    <string name="add_activity">Add Activity</string>
+    <string name="see_goals">See Goals</string>
+
+    <string name="setsteps_title" >Step Counter</string>
+    <string-array name="setsteps_cnt">
+        <item id="@+id/1"> 1000</item>
+        <item id="@+id/2"> 2000</item>
+        <item id="@+id/3"> 3000</item>
+        <item id="@+id/4"> 4000</item>
+        <item id="@+id/5"> 5000</item>
+        <item id="@+id/6"> 6000</item>
+        <item id="@+id/7"> 7000</item>
+        <item id="@+id/8"> 8000</item>
+        <item id="@+id/9"> 9000</item>
+        <item id="@+id/10">10000</item>
+        <item id="@+id/11">11000</item>
+        <item id="@+id/12">12000</item>
+        <item id="@+id/13">13000</item>
+        <item id="@+id/14">14000</item>
+        <item id="@+id/15">15000</item>
+        <item id="@+id/16">16000</item>
+        <item id="@+id/17">17000</item>
+        <item id="@+id/18">18000</item>
+        <item id="@+id/19">19000</item>
+        <item id="@+id/20">20000</item>
+    </string-array>
+
+    <string name="setunits_title" >Units</string>
+    <string-array name="set_units">
+        <item id="@+id/unit1">Steps</item>
+        <item id="@+id/unit2">Kilometres</item>
+        <item id="@+id/unit3">Miles</item>
+        <item id="@+id/unit4">Yards</item>
+    </string-array>
+
+    <string name="setmode_title" >Mode</string>
+    <string-array name="set_mode">
+        <item id="@+id/unit1">Manual</item>
+        <item id="@+id/unit2">Auto</item>
+    </string-array>
+
+
+    <string name="set_steps">Goal Distance</string>
+    <string name="setgoal_name">Goal Name</string>
+    <string name="setdist_cnt">Distance Counter</string>
+    <string name="rec_date">Goal Name</string>
+
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="units_selected">in Units</string>
+
+
+</resources>

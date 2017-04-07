@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seestatsgoals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/list_horizontal_margin"
+    android:paddingLeft="@dimen/list_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.Nav_Statistics"
+    >
+
+    <TextView
+        android:id="@+id/title_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Statistics:" />
+
+    <TextView
+        android:id="@+id/title_achieved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_stats"
+        android:text="Achieved Goals" />
+
+
+    <TextView
+        android:id="@+id/title_prcg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_toEndOf="@id/title_achieved"
+        android:layout_below="@id/title_stats"
+        android:text="Percentage" />
+
+
+    <ListView
+        android:id="@+id/list_rdb"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.1dp"
+        android:divider="@color/colorBG"
+        android:layout_below="@id/title_achieved"
+        >
+    </ListView>
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="More"
+        android:id="@+id/see_more_stats_g"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+
+</RelativeLayout>

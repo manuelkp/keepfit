@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a62bc</color>
+    <color name="colorPrimaryDark">#7729446e</color>
+    <color name="colorAccent">#f4148b</color>
+    <color name="colorAccent2">#ec4ca1</color>
+    <color name="colorAccent3">#c70553</color>
+    <color name="colorBG">#c91263e7</color>
+    <color name="colorSpin">#7db0fce0</color>
+    <color name="colorBackgroundButton">#e6f2e9</color>
+</resources>
+
+
+<!--<color name="colorPrimary">#349e32</color>-->
+<!--<color name="colorPrimaryDark">#247c29</color>-->
+<!--<color name="colorAccent">#FF4081</color>-->
+<!--<color name="colorBG">#37963c</color>-->

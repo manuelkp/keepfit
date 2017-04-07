@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seestats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/list_horizontal_margin"
+    android:paddingLeft="@dimen/list_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.Nav_Statistics"
+    >
+
+    <TextView
+        android:id="@+id/title_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Statistics:" />
+
+    <TextView
+        android:id="@+id/title_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_stats"
+        android:text="Over the Past Week" />
+
+    <TextView
+        android:id="@+id/title_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_period"
+        android:text="~ in Steps ~" />
+
+    <TextView
+        android:id="@+id/title_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_period"
+        android:text="Min. Activity:" />
+
+    <TextView
+        android:id="@+id/dist_min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_period"
+        android:layout_toEndOf="@id/title_min"
+        android:text="Min. Distance:" />
+
+    <TextView
+        android:id="@+id/title_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_min"
+        android:text="Max. Activity:" />
+
+    <TextView
+        android:id="@+id/dist_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/dist_min"
+        android:layout_toEndOf="@id/title_max"
+        android:text="Max. Distance:" />
+
+    <TextView
+        android:id="@+id/title_avg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/title_max"
+        android:text="Avg. Activity:" />
+
+    <TextView
+        android:id="@+id/dist_avg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/dist_max"
+        android:layout_alignStart="@id/dist_max"
+        android:text="Avg. Distance:" />
+
+
+
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:text="Change Units"
+        android:id="@+id/see_more_units"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/dist_avg" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="More"
+        android:id="@+id/see_more_stats"
+        android:background="@drawable/my_button"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+
+</RelativeLayout>

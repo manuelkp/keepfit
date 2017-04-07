@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seehistoryfragm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/list_horizontal_margin"
+    android:paddingLeft="@dimen/list_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    tools:context="com.example.keepfit.Nav_ChooseHistory"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Pick a Day:"
+        android:id="@+id/title_history" />
+
+    <ListView
+        android:id="@+id/list_rdb"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.1dp"
+        android:divider="@color/colorBG"
+        android:layout_below="@id/title_history"
+        >
+    </ListView>
+
+
+
+
+</RelativeLayout>

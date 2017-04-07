@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_items_g"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.keepfit.Nav_SeeSavedGoalsFr">
+
+    <TextView
+        android:id="@+id/dot"
+        android:paddingStart="2dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:text="●" />
+
+    <TextView
+        android:id="@+id/goal_name"
+        android:paddingStart="27dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/goal_steps_title"
+        android:paddingStart="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: "
+        android:layout_alignStart="@id/dot"
+        android:layout_below="@id/goal_name"/>
+
+    <TextView
+        android:id="@+id/goal_steps"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/goal_steps_title"
+        android:text="TextView"
+        android:layout_below="@id/goal_name"/>
+
+    <TextView
+        android:id="@+id/chosen_units"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/goal_steps"
+        android:text="Units"
+        android:layout_below="@id/goal_name"/>
+
+
+
+</RelativeLayout>
